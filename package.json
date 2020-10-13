@@ -1,0 +1,27 @@
+{
+  "name": "cars",
+  "version": "1.0.0",
+  "description": "CRUD app for cars",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node server",
+    "server": "cross-env NODE_ENV=development nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "KekeT",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "5.3.0",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "mongoose": "5.10.8",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.2",
+    "nodemon": "2.0.4"
+  }
+}
