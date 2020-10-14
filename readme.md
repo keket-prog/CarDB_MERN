@@ -2,7 +2,14 @@
 
 App performs _CRUD_ operations for a car database.
 
-_Creates_ - A new car with fields: - Model - Make - Colour - Registration - Owner - Address
+_Creates_ - A new car with fields:
+
+- Model
+- Make
+- Colour
+- Registration
+- Owner
+- Address
 
 _Reads_ - The entire car database and cars older than 5 years.
 
