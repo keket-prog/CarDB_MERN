@@ -7,11 +7,6 @@ router.get("/api", async (req, res) => {
   try {
     const car = await Cars.find().sort({ Model: "desc" });
     res.send(car);
-    // return res.status(200).json({
-    //   success: true,
-    //   count: car.length,
-    //   data: car,
-    // });
   } catch (error) {
     return res.status(500).json({
       success: false,
