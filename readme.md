@@ -45,3 +45,13 @@ Download files and run the following commands:
 The server runs on `localhost:3001/api`.
 
 The client app runs on `localhost:3000`
+
+## Usage
+
+Create a config.env in the config directory with the following:
+
+```
+MONGO_URI = mongodb+srv://xxxxxxx
+JWT_SECRET = xxx
+
+```

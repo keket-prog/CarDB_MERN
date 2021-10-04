@@ -3,7 +3,7 @@ const router = express.Router();
 const Cars = require("../models/car.model");
 
 //Show all cars, GET / request
-router.get("/api", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const car = await Cars.find().sort({ Model: "desc" });
     res.send(car);
